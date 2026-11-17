@@ -1,0 +1,345 @@
+>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="MV MED LTDA — Gestão, organização e apoio administrativo em projetos da área da saúde."/>
+        <meta name="theme-color" content="#102637"/>
+        <title>MV MED | Gestão e Organização em Saúde</title>
+        <style>
+            :root {
+                --navy: #102637;
+                --ink: #173345;
+                --blue: #285c73;
+                --aqua: #71c1ba;
+                --paper: #f6f8f8;
+                --line: #dce6e8;
+                --muted: #617482
+            }
+
+            * {
+                box-sizing: border-box
+            }
+
+            html {
+                scroll-behavior: smooth
+            }
+
+            body {
+                margin: 0;
+                font-family: Arial,Helvetica,sans-serif;
+                color: var(--ink);
+                background: white;
+                line-height: 1.6
+            }
+
+            a {
+                color: inherit
+            }
+
+            header {
+                background: var(--navy);
+                color: #fff;
+                position: sticky;
+                top: 0;
+                z-index: 2
+            }
+
+            nav {
+                max-width: 1120px;
+                padding: 15px 26px;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 12px
+            }
+
+            .logo {
+                font-size: 1.45rem;
+                font-weight: 800;
+                letter-spacing: -1px;
+                text-decoration: none
+            }
+
+            .logo span {
+                color: var(--aqua)
+            }
+
+            .links {
+                display: flex;
+                gap: 22px;
+                font-size: .91rem
+            }
+
+            .links a {
+                text-decoration: none;
+                color: #d7e4e7
+            }
+
+            .links a:hover {
+                color: #fff
+            }
+
+            .hero {
+                background: linear-gradient(115deg,#102637 10%,#1d5265 100%);
+                color: white;
+                padding: 100px 24px 105px
+            }
+
+            .inner {
+                max-width: 1120px;
+                margin: auto
+            }
+
+            .eyebrow {
+                font-size: .8rem;
+                letter-spacing: 3px;
+                font-weight: bold;
+                color: #a9e0d7;
+                text-transform: uppercase
+            }
+
+            .hero h1 {
+                font-size: clamp(2.6rem,6vw,5rem);
+                max-width: 780px;
+                line-height: 1.1;
+                letter-spacing: -2px;
+                margin: 20px 0
+            }
+
+            .hero p {
+                max-width: 650px;
+                font-size: 1.12rem;
+                color: #daeaed
+            }
+
+            .button {
+                display: inline-block;
+                background: var(--aqua);
+                color: var(--navy);
+                font-weight: 700;
+                text-decoration: none;
+                padding: 12px 22px;
+                border-radius: 8px;
+                margin-top: 20px
+            }
+
+            .button:hover {
+                background: #96ded7
+            }
+
+            section {
+                padding: 74px 24px
+            }
+
+            .section-sub {
+                max-width: 700px;
+                color: var(--muted)
+            }
+
+            h2 {
+                font-size: 2rem;
+                line-height: 1.2;
+                margin: 10px 0 20px
+            }
+
+            .overline {
+                color: var(--blue);
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-size: .78rem;
+                font-weight: bold
+            }
+
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 18px;
+                margin-top: 28px
+            }
+
+            .tile {
+                padding: 30px 25px;
+                border: 1px solid var(--line);
+                border-radius: 14px;
+                background: white
+            }
+
+            .tile b {
+                display: block;
+                margin-bottom: 10px;
+                font-size: 1.1rem
+            }
+
+            .tile p {
+                margin: 0;
+                color: var(--muted);
+                font-size: .96rem
+            }
+
+            .pale {
+                background: var(--paper)
+            }
+
+            .two {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 60px;
+                align-items: start
+            }
+
+            .note {
+                border-left: 4px solid var(--aqua);
+                padding: 12px 20px;
+                background: #edf6f5
+            }
+
+            .contact {
+                background: var(--navy);
+                color: white
+            }
+
+            .contact p {
+                color: #d6e6ea
+            }
+
+            .contact a:not(.button) {
+                color: #b4ebe4
+            }
+
+            footer {
+                padding: 20px 24px;
+                background: #091b28;
+                color: #b2c1ca;
+                font-size: .85rem
+            }
+
+            footer .inner {
+                display: flex;
+                justify-content: space-between;
+                gap: 16px;
+                flex-wrap: wrap
+            }
+
+            @media(max-width: 720px) {
+                .links {
+                    gap:10px;
+                    font-size: .75rem
+                }
+
+                .grid,.two {
+                    grid-template-columns: 1fr
+                }
+
+                .hero {
+                    padding: 72px 22px
+                }
+
+                .hero h1 {
+                    letter-spacing: -1px
+                }
+
+                section {
+                    padding: 55px 22px
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a class="logo" href="#inicio" aria-label="Página inicial MV MED">
+                    MV<span>MED</span>
+                </a>
+                <div class="links">
+                    <a href="#sobre">A empresa</a>
+                    <a href="#atuacao">Atuação</a>
+                    <a href="#contato">Contato</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="hero" id="inicio">
+                <div class="inner">
+                    <div class="eyebrow">MV MED LTDA</div>
+                    <h1>Organização, conhecimento e gestão em saúde.</h1>
+                    <p>Uma apresentação institucional da MV MED, com foco em processos organizacionais, documentação administrativa e apoio à gestão de atividades relacionadas à área da saúde.</p>
+                    <a href="#sobre" class="button">Conheça a MV MED</a>
+                </div>
+            </div>
+            <section id="sobre">
+                <div class="inner two">
+                    <div>
+                        <span class="overline">Quem somos</span>
+                        <h2>MV MED</h2>
+                        <p>A MV MED LTDA é uma empresa brasileira. Esta página apresenta sua identidade institucional e temas relacionados às suas rotinas organizacionais e administrativas.</p>
+                        <p>Nosso compromisso é valorizar uma atuação estruturada, responsável e orientada à melhoria contínua dos processos.</p>
+                    </div>
+                    <div class="note">
+                        <strong>Identificação da empresa</strong>
+                        <p>
+                            <strong>Razão social:</strong>
+                            MV MED LTDA<br>
+                            <strong>CNPJ:</strong>
+                            13.827.660/0001-92
+                        </p>
+                        <p>Informações institucionais fornecidas pela representante da empresa.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="pale" id="atuacao">
+                <div class="inner">
+                    <span class="overline">Organização e gestão</span>
+                    <h2>Áreas de interesse institucional</h2>
+                    <p class="section-sub">Temas de organização administrativa que orientam a estruturação dos processos internos e o desenvolvimento de práticas de gestão.</p>
+                    <div class="grid">
+                        <div class="tile">
+                            <b>Processos administrativos</b>
+                            <p>Organização de fluxos, acompanhamento de rotinas e padronização de procedimentos.</p>
+                        </div>
+                        <div class="tile">
+                            <b>Gestão documental</b>
+                            <p>Estruturação de registros, controles, relatórios e documentos institucionais.</p>
+                        </div>
+                        <div class="tile">
+                            <b>Planejamento e qualidade</b>
+                            <p>Acompanhamento de atividades, análise de necessidades e identificação de melhorias.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="institucional">
+                <div class="inner two">
+                    <div>
+                        <span class="overline">Compromissos</span>
+                        <h2>Responsabilidade e profissionalismo</h2>
+                        <p>Acreditamos na importância da clareza das informações, do cuidado no tratamento de documentos e da integridade dos processos administrativos.</p>
+                    </div>
+                    <div>
+                        <h3>Princípios</h3>
+                        <p>Organização, ética, confidencialidade, respeito e aprimoramento constante.</p>
+                        <p>Este site é informativo e não contém dados de pacientes ou informações confidenciais.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="contact" id="contato">
+                <div class="inner">
+                    <span class="eyebrow">Fale conosco</span>
+                    <h2>Contato institucional</h2>
+                    <p>Para informações sobre a MV MED, entre em contato por e-mail.</p>
+                    <p>
+                        <a href="mailto:deiselucia.vieira@gmail.com">deiselucia.vieira@gmail.com</a>
+                    </p>
+                    <a class="button" href="mailto:deiselucia.vieira@gmail.com?subject=Contato%20institucional%20MV%20MED">Enviar e-mail</a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="inner">
+                <span>© 2026 MV MED LTDA · CNPJ 13.827.660/0001-92</span>
+                <span>Site institucional</span>
+            </div>
+        </footer>
+    </body>
+</html>
